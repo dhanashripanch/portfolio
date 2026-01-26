@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhanashri Panchputre | Software Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="mouse-follower"></div>
+    <div class="noise-effect"></div>
+    
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">DP</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Dhanashri<br><span class="gradient-text">Panchputre</span></h1>
+                    <p class="hero-subtitle">Full-Stack Software Engineer | Backend Specialist</p>
+                    <p class="hero-desc">5+ years crafting scalable microservices and responsive UIs</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})">View My Work</button>
+                        <button class="btn btn-secondary" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Get in Touch</button>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="animated-grid"></div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span>Scroll to explore</span>
+                <div class="mouse"></div>
+            </div>
+    </section>
+
+    <main>
+        <section id="about" class="about">
+            <div class="section-container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>I'm a Software Engineer specializing in full-stack development with expertise in building scalable microservices and responsive web applications. My journey spans across enterprise, finance, and transportation domains.</p>
+                        <p>Currently at <strong>Uber</strong>, I engineer backend services using Java Spring Boot and build responsive UIs with React.js. I'm passionate about clean code, system design, and mentoring junior developers.</p>
+                        <p>When I'm not coding, you'll find me exploring new technologies, solving complex system design problems, or contributing to open-source projects.</p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <h3>5+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>50+</h3>
+                            <p>Projects Delivered</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>15+</h3>
+                            <p>Tech Skills</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>5</h3>
+                            <p>Certifications</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="experience">
+            <div class="section-container">
+                <h2 class="section-title">Professional Experience</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Software Engineer</h3>
+                            <p class="company">Uber | Chicago, IL</p>
+                            <p class="date">Jun 2025 - Present</p>
+                            <ul class="achievements">
+                                <li>Engineered backend services using Java Spring Boot, PostgreSQL, and AWS Lambda for real-time financial reconciliation</li>
+                                <li>Built responsive UI components with React.js and Bootstrap, resolving 30+ accessibility issues</li>
+                                <li>Provisioned CI/CD pipelines with Docker, GitHub Actions, and Azure DevOps reducing release delays by 1 sprint</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Software Engineer</h3>
+                            <p class="company">Dell Technologies | India</p>
+                            <p class="date">Nov 2021 - Jul 2023</p>
+                            <ul class="achievements">
+                                <li>Constructed microservices using Java Spring Boot and PostgreSQL integrated with AWS Lambda</li>
+                                <li>Designed dashboards using React.js and Bootstrap improving server uptime visibility</li>
+                                <li>Optimized page response time by 2.5 seconds through React refactoring and SQL optimization</li>
+                                <li>Mentored 2 junior engineers on Spring Boot best practices and SQL optimization</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Software Developer</h3>
+                            <p class="company">KPMG | India</p>
+                            <p class="date">May 2019 - Nov 2021</p>
+                            <ul class="achievements">
+                                <li>Assembled backend services using Python Flask and PostgreSQL deployed on Azure Functions</li>
+                                <li>Created secure RESTful APIs with Swagger UI and Express.js for banking clients</li>
+                                <li>Mapped 14 real-time analytics modules using React.js and Bootstrap for compliance reporting</li>
+                                <li>Optimized CI/CD workflows reducing release delays by 2 days per sprint</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <div class="section-container">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-column">
+                        <h3>Languages</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">HTML5</span>
+                            <span class="skill-tag">CSS3</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-column">
+                        <h3>Frameworks</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Spring Boot</span>
+                            <span class="skill-tag">React.js</span>
+                            <span class="skill-tag">Flask</span>
+                            <span class="skill-tag">Express.js</span>
+                            <span class="skill-tag">Bootstrap</span>
+                            <span class="skill-tag">Hibernate</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-column">
+                        <h3>Cloud & DevOps</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">Azure</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">GitHub Actions</span>
+                            <span class="skill-tag">Jenkins</span>
+                            <span class="skill-tag">Azure DevOps</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-column">
+                        <h3>Databases</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">PostgreSQL</span>
+                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">MySQL</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-column">
+                        <h3>Testing</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">JUnit</span>
+                            <span class="skill-tag">Mockito</span>
+                            <span class="skill-tag">Postman</span>
+                            <span class="skill-tag">Unit Testing</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-column">
+                        <h3>Tools & Practices</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Jira</span>
+                            <span class="skill-tag">Agile</span>
+                            <span class="skill-tag">Figma</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="section-container">
+                <h2 class="section-title">Notable Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-visual"></div>
+                        <h3>Enterprise Inventory Management</h3>
+                        <p>A comprehensive inventory solution with Java Swing GUI managing 3-tier user roles and 50+ CRUD operations.</p>
+                        <div class="project-tags">
+                            <span>Java</span>
+                            <span>MySQL</span>
+                            <span>MVC Pattern</span>
+                        </div>
+                        <a href="#" class="project-link">View Project →</a>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-visual"></div>
+                        <h3>Expense Tracker Dashboard</h3>
+                        <p>Financial dashboard with 9+ interactive components using React.js and advanced data visualization with Recharts.</p>
+                        <div class="project-tags">
+                            <span>React.js</span>
+                            <span>Recharts</span>
+                            <span>Framer Motion</span>
+                        </div>
+                        <a href="#" class="project-link">View Project →</a>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-visual"></div>
+                        <h3>Pet Care Web App</h3>
+                        <p>Full-stack pet care application with responsive design, real-time form validation, and Local Storage persistence.</p>
+                        <div class="project-tags">
+                            <span>React.js</span>
+                            <span>Responsive Design</span>
+                            <span>Form Validation</span>
+                        </div>
+                        <a href="#" class="project-link">View Project →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="certifications">
+            <div class="section-container">
+                <h2 class="section-title">Certifications</h2>
+                <div class="cert-grid">
+                    <div class="cert-card">
+                        <div class="cert-icon">🏆</div>
+                        <p>AWS Solutions Architect Associate (SAA-C03)</p>
+                    </div>
+                    <div class="cert-card">
+                        <div class="cert-icon">🏆</div>
+                        <p>AWS DevOps Engineer Professional</p>
+                    </div>
+                    <div class="cert-card">
+                        <div class="cert-icon">🏆</div>
+                        <p>Azure Solutions Architect Expert (AZ-305)</p>
+                    </div>
+                    <div class="cert-card">
+                        <div class="cert-icon">🏆</div>
+                        <p>Certified Kubernetes Application Developer (CKAD)</p>
+                    </div>
+                    <div class="cert-card">
+                        <div class="cert-icon">🏆</div>
+                        <p>Microsoft Certified: Azure Fundamentals (AZ-900)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="section-container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <p class="contact-subtitle">Let's discuss your next project or opportunity</p>
+                    <div class="contact-links">
+                        <a href="mailto:dhanashri.sde@gmail.com" class="contact-card">
+                            <span class="icon">📧</span>
+                            <p>Email</p>
+                            <span class="link-text">dhanashri.sde@gmail.com</span>
+                        </a>
+                        <a href="tel:312-532-7573" class="contact-card">
+                            <span class="icon">📱</span>
+                            <p>Phone</p>
+                            <span class="link-text">312-532-7573</span>
+                        </a>
+                        <a href="https://linkedin.com/in/dhanashri" target="_blank" class="contact-card">
+                            <span class="icon">💼</span>
+                            <p>LinkedIn</p>
+                            <span class="link-text">Connect with me</span>
+                        </a>
+                        <a href="https://github.com/dhanashri" target="_blank" class="contact-card">
+                            <span class="icon">🔗</span>
+                            <p>GitHub</p>
+                            <span class="link-text">View my work</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="section-container">
+            <p>&copy; 2026 Dhanashri Panchputre. Built with HTML, CSS, and JavaScript.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
