@@ -1116,19 +1116,20 @@ body {
     font-size: var(--font-size-sm);
 }
 
-/* Image Card */
+/* Image Card with Photo */
 .image-card {
     position: relative;
     width: 100%;
     aspect-ratio: 1;
     perspective: 1000px;
+    cursor: pointer;
 }
 
 .card-inner {
     position: relative;
     width: 100%;
     height: 100%;
-    transition: transform 0.6s var(--ease-standard);
+    transition: transform 0.8s;
     transform-style: preserve-3d;
 }
 
@@ -1136,32 +1137,100 @@ body {
     transform: rotateY(180deg);
 }
 
-.card-front {
+.card-front,
+.card-back {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: var(--color-primary);
-    border-radius: var(--radius-lg);
+    border-radius: 15px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 212, 255, 0.2);
+}
+
+/* Front - Photo */
+.card-front {
+    background: var(--card-bg);
+    border: 2px solid var(--primary-color);
+}
+
+.card-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 212, 255, 0.9), transparent);
+    padding: 2rem;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.image-card:hover .card-overlay {
+    transform: translateY(0);
+}
+
+.card-overlay h3 {
+    color: var(--dark-bg);
+    font-size: 1.5rem;
+    margin: 0;
+    font-weight: 700;
+}
+
+/* Back - Info */
+.card-back {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    backface-visibility: hidden;
-    box-shadow: var(--shadow-lg);
+    padding: 2rem;
+    transform: rotateY(180deg);
 }
 
-.card-front h3 {
-    font-size: var(--font-size-3xl);
-    color: var(--color-btn-primary-text);
-    margin-bottom: var(--space-16);
-    font-weight: var(--font-weight-bold);
+.card-back h3 {
+    font-size: 2rem;
+    color: var(--dark-bg);
+    margin-bottom: 1rem;
+    font-weight: 700;
 }
 
-.card-front p {
-    color: var(--color-btn-primary-text);
-    font-size: var(--font-size-lg);
-    margin: 0;
+.card-back p {
+    color: var(--dark-bg);
+    font-size: 1.1rem;
+    margin: 0 0 2rem 0;
+    font-weight: 600;
+}
+
+.card-icons {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 2rem;
+}
+
+.card-icons i {
+    color: var(--dark-bg);
+    animation: float 3s ease-in-out infinite;
+}
+
+.card-icons i:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.card-icons i:nth-child(3) {
+    animation-delay: 1s;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
 }
 
 /* ============================================
